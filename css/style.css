@@ -13,7 +13,7 @@ body {
   font-size: 17px;
   color: rgba(0, 0, 0, 0.65);
   font-family: "Kanit", sans-serif;
-  background-image: url("images/bg/bg22.png");
+  background-image: url("/images/bg/bg22.png");
    background-size: contain;
    background-position: center;
 }
