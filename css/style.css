@@ -2,16 +2,20 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700);
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;1,100;1,200&display=swap");
 html {
   overflow-x: hidden;
 }
 
 body {
   line-height: 1.5;
-  font-family: "Hind", serif;
   -webkit-font-smoothing: antialiased;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.65);
+  font-family: "Kanit", sans-serif;
+  background-image: url("/images/bg/bg22.png");
+   background-size: contain;
+   background-position: center;
 }
 
 h1,
@@ -26,7 +30,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 600;
   color: #242424;
 }
@@ -337,7 +341,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #fffb00;
+  color: #F0A500;
   text-decoration: none;
 }
 
@@ -441,12 +445,12 @@ a:focus {
 }
 
 #navbar li {
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 #navbar .nav-link {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  font-weight: bolder;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
@@ -456,7 +460,7 @@ a:focus {
 
 #navbar .nav-link:hover,
 #navbar .nav-link:focus {
-  color: #fffb00;
+  color: #F0A500;
 }
 
 #navbar .btn {
@@ -466,7 +470,7 @@ a:focus {
 
 .header-top {
   background: #0099ff;
-  color: #919194;
+  color: #F0A500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -476,7 +480,7 @@ a:focus {
 }
 
 .header-top .header-top-socials a {
-  color: #000000;
+  color:#fff;
   margin-right: 15px;
   font-size: 16px;
 }
@@ -491,18 +495,20 @@ a:focus {
 }
 
 .header-top .header-top-info a {
-  margin-left: 35px;
+  margin-left: 1em;
   color: #919194;
 }
 
 .navbar-brand {
   color: #fff;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: bolder;
+  letter-spacing: 1em;
+  text-align: left;
+
 }
 
 .navbar-brand span {
-  color: #fffb00;
+  color: #F0A500;
 }
 
 .dropdown-menu {
@@ -544,7 +550,7 @@ a:focus {
 }
 
 .dropdown-item:hover {
-  background: #fffb00;
+  background: #F0A500;
   color: #fff;
 }
 
@@ -654,19 +660,24 @@ ul.dropdown-menu li {
 }
 
 .team-img-hover .team-social li a.facebook {
-  background: #6666cc;
+  background: #185ADB;
+  color: #fff;
 }
 
 .team-img-hover .team-social li a.twitter {
   background: #3399cc;
+  color: #fff;
 }
 
 .team-img-hover .team-social li a.instagram {
-  background: #cc66cc;
+   /* fallback for old browsers */
+  background: linear-gradient(to left top, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
 }
 
 .team-img-hover .team-social li a.linkedin {
   background: #3399cc;
+  color: #fff;
 }
 
 .team-img-hover {
